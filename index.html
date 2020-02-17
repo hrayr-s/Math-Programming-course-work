@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    Ծրագրի հեղինակներ Հրայր Ստեփանյան և Վաչե Գրիգորյան
+    կազմվել է 01.05.2016թ.
+    Բոլոր իրավունքները պաշտպանված են
+
+    Program Authors are Hrayr Stepanyan and Vache Grigoryan
+    Created in 01.05.2016
+    All Rights Reserved
+-->
+
+<html>
+    <head>
+        <title>Մաթ Ծրագրավորման կուրսային աշխատանք</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery.min.js"></script>
+        <script src="bin.js"></script>
+        <script src="main.js"></script>
+        <style type="text/css">
+            body{
+                text-align: center;
+                background: #F8FACC;
+            }
+            *{
+                outline: none;
+            }
+            input[type="text"] {
+            width: 70px;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+            background-color: #F5A9A9; 
+            padding: 0;
+            border: none;
+            margin: 0;
+            color: #0000FF;
+            }
+            input[type="text"]:hover, 
+            input[type="text"]:active,
+            input[type="text"]:focus {
+            	color: #fff;
+            background-color: #FF0080 !important;
+            }
+            #qanak,#qanak:focus{
+            width: 60px;
+            height: 28px;
+            text-align: center;
+            font-size: 20px;
+            padding: 0;
+            border: 1px solid #ccc;
+            border-radius: 50px 0 0 50px;
+            }
+            #qaylaraj,#qaylaraj:focus{
+            width: 150px;
+            height: 30px;
+            border: 1px solid #ccc;
+            padding: 0;
+            border-radius: 0 50px 50px 0;
+            position: relative;
+            top: -2px;
+            left: -5px;
+            }
+            table{
+            	font-weight: bold;
+            	color: #DF0101;
+                margin:20px auto 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+         <label>Մուտքագրեք փոփոխականների քանակը.</label>
+          <input id="qanak" name="qanak" type="number"/>
+          <button type="submit" disabled="disabled"  id="qaylaraj" onclick="qaylaraj();">Անցնել առաջ! -></button>
+        </div>
+    </body>
+</html>
